@@ -4,30 +4,24 @@
 		<title></title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="estilo.css" />
-
+		<link rel="stylesheet" href="src/css/estilo.css" />
 		<script>
 			function iniciarJogo() {
 				var nivel = document.getElementById('nivel').value
-
 				if(nivel === '') {
 					alert('Selecione um nível para iniciar o jogo')
 					return false
 				}
-
-				window.location.href = "app.html?" + nivel
-
+				window.location.href = "src/view/app.html?" + nivel
 			}
 		</script>
 	</head>
 	<body>
-
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="d-flex justify-content-center">
-						<img src="imagens/game.png" />
+						<img src="src/assets/imagens/game.png" />
 					</div>
 				</div>
 			</div>
@@ -47,7 +41,6 @@
 				</div>
 			</div>
 
-
 			<div class="row">
 				<div class="col">
 					<div class="d-flex justify-content-center">
@@ -56,6 +49,5 @@
 				</div>
 			</div>
 		</div>
-
 	</body>
 </html>
